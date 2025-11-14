@@ -151,7 +151,7 @@ requirements.txt           # Python package dependencies for pip installations
 
 ---
 
-## 🙌 Acknowledgements
+## Acknowledgements
 Thanks to:
 - HuggingFace Diffusers  
 - PyTorch Team  
