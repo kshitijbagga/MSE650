@@ -1,9 +1,9 @@
 # Microstructure Generation using DDPM (Diffusion Models)
 
-## 🔬 Project Overview
+## Project Overview
 This project trains a **Denoising Diffusion Probabilistic Model (DDPM)** to generate realistic **microstructure images** (such as EBSD IPF maps). The deep generative model learns the statistical and crystallographic structure of micrographs and synthesizes new samples resembling real microstructures.
 
-## 📁 Dataset Structure
+## Dataset Structure
 The dataset is expected to follow this format:
 
 ```
@@ -27,7 +27,7 @@ Each class may correspond to:
 
 All images must be loaded as **RGB** because IPF maps encode orientation into color.
 
-## 🧠 What is a DDPM?
+## What is a DDPM?
 
 A DDPM consists of two processes:
 
@@ -51,7 +51,7 @@ Sampling starts from random noise and iteratively denoises it to produce a reali
 
 ---
 
-## 🕸 UNet Architecture (for Microstructure Generation)
+## UNet Architecture (for Microstructure Generation)
 
 The UNet is composed of:
 
@@ -70,7 +70,7 @@ and predicts the added noise.
 
 ---
 
-## ⚙ Training Pipeline
+## Training Pipeline
 
 ### **1. Load and preprocess images**
 - resized to 128×128  
@@ -103,7 +103,7 @@ $$
 
 ---
 
-## 🖼 Sampling (Generating Microstructures)
+## Sampling (Generating Microstructures)
 
 To generate samples:
 1. Start from Gaussian noise
@@ -114,7 +114,7 @@ Sampling produces an image resembling real IPF microstructures.
 
 ---
 
-## 🌈 What the Model Learns
+## What the Model Learns
 The model implicitly captures:
 
 - grain morphology  
@@ -128,7 +128,7 @@ Because IPF colors encode orientation in RGB, the model learns crystallographic 
 
 ---
 
-## 📦 Files in This Repository
+## Files in This Repository
 
 ```
 Class/                     # Dataset folder containing class-wise image directories
@@ -142,7 +142,7 @@ requirements.txt           # Python package dependencies for pip installations
 
 ---
 
-## 🚀 Future Improvements
+## Future Improvements
 - DDIM sampling for faster generation  
 - Classifier-free guidance  
 - Higher-resolution UNets  
