@@ -34,18 +34,14 @@ A DDPM consists of two processes:
 ### **1. Forward Diffusion (Noise Addition)**
 The model progressively corrupts an image by adding Gaussian noise:
 
-\[
-x_t = \sqrt{lpha_t}x_{t-1} + \sqrt{1 - lpha_t}\epsilon
-\]
+\[x_t = \sqrt{lpha_t}x_{t-1} + \sqrt{1 - lpha_t}\epsilon\]
 
 After ~1000 steps, the image becomes pure noise.
 
 ### **2. Reverse Diffusion (Denoising)**
 A neural network (UNet) learns to reverse the noising process:
 
-\[
-\hat{\epsilon}_	heta(x_t, t) pprox \epsilon
-\]
+\[\hat{\epsilon}_	heta(x_t, t) pprox \epsilon\]
 
 Sampling starts from random noise and iteratively denoises it to produce a realistic microstructure.
 
@@ -92,9 +88,7 @@ pred_noise = unet(noisy_imgs, timesteps, class_labels)
 ### **4. Loss**
 The loss is:
 
-\[
-L = ||\hat{\epsilon}_	heta - \epsilon||^2
-\]
+\[L = ||\hat{\epsilon}_	heta - \epsilon||^2\]
 
 ### **5. Optimization**
 - AdamW optimizer  
