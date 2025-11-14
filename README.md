@@ -131,10 +131,13 @@ Because IPF colors encode orientation in RGB, the model learns crystallographic 
 ## 📦 Files in This Repository
 
 ```
-ddpm-microgen-clean.ipynb     # Main notebook
-models/                       # Saved checkpoints
-samples/                      # Generated microstructures
-README.md                     # Project documentation
+Class/                     # Dataset folder containing class-wise image directories
+.python-version            # Python version lock (for environment reproducibility)
+ddpm-microgen.ipynb        # Main Jupyter Notebook for training & sampling DDPM
+main.py                    # Python script version of the DDPM pipeline (optional)
+pyproject.toml             # Project + dependency metadata for Poetry/Pip
+README.md                  # Project documentation
+requirements.txt           # Python package dependencies for pip installations
 ```
 
 ---
