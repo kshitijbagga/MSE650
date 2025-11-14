@@ -98,7 +98,7 @@ $$
 
 ### **5. Optimization**
 - AdamW optimizer  
-- Mixed precision (`torch.autocast("cuda")`)  
+- Mixed precision  
 - EMA (Exponential Moving Average) to stabilize sampling  
 
 ---
